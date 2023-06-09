@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservaciones",
+  "info": {
+    "singularName": "reservacion",
+    "pluralName": "reservaciones",
+    "displayName": "Reservacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cliente.cliente"
+    },
+    "entrada": {
+      "type": "date",
+      "required": true
+    },
+    "salida": {
+      "type": "date",
+      "required": true
+    },
+    "habitacion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::habitacion.habitacion"
+    },
+    "fecha_reservacion": {
+      "type": "date",
+      "required": true
+    },
+    "notas": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "opiniones",
+  "info": {
+    "singularName": "opinion",
+    "pluralName": "opiniones",
+    "displayName": "Opinion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "opinion": {
+      "type": "text",
+      "required": true
+    },
+    "calificacion": {
+      "type": "enumeration",
+      "enum": [
+        "uno",
+        "dos",
+        "tres",
+        "cuatro",
+        "cinco"
+      ],
+      "required": true,
+      "default": "uno"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "kind": "collectionType",
+  "collectionName": "habitaciones",
+  "info": {
+    "singularName": "habitacion",
+    "pluralName": "habitaciones",
+    "displayName": "Habitacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "banos": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    },
+    "camas": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "capacidad_personas": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "tv": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "aire_acondicionado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "agua_caliente": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "minibar": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "balcon": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "estacionamiento": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "wifi": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "fotos": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "Simple",
+        "Doble",
+        "Triple",
+        "Familiar",
+        "Familiar + Plus"
+      ],
+      "default": "Simple",
+      "required": true
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "Ocupada",
+        "Disponible"
+      ],
+      "default": "Disponible",
+      "required": true
+    },
+    "areas_verdes": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "lavanderia": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "COD": {
+      "type": "string",
+      "required": true
+    },
+    "precio": {
+      "type": "decimal",
+      "required": true
+    },
+    "detalle": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
