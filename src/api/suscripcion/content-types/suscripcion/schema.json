@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suscripciones",
+  "info": {
+    "singularName": "suscripcion",
+    "pluralName": "suscripciones",
+    "displayName": "Suscripcion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "correo": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    }
+  }
+}
