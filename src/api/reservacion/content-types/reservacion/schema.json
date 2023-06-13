@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "cliente": {
+    "usuario": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::cliente.cliente"
+      "target": "plugin::users-permissions.user"
     },
     "entrada": {
       "type": "date",
